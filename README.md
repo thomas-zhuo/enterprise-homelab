@@ -1,12 +1,11 @@
 # Enterprise Homelab
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue)
-![Project](https://img.shields.io/badge/Project-Enterprise%20Homelab-2ea44f)
-![Firewall](https://img.shields.io/badge/Firewall-pfSense%20CE-3949ab)
-![Hypervisor](https://img.shields.io/badge/Hypervisor-Proxmox%20VE-E57000)
-![Network](https://img.shields.io/badge/Core_Network-10Gbps-success)
 ![Architecture](https://img.shields.io/badge/Architecture-Enterprise%20Inspired-6f42c1)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Network](https://img.shields.io/badge/Network-10GbE-success)
+![Firewall](https://img.shields.io/badge/Firewall-pfSense%20CE-3949ab)
+![Virtualization](https://img.shields.io/badge/Virtualization-Proxmox%20VE-E57000)
+![Documentation](https://img.shields.io/badge/Type-Engineering%20Case%20Study-orange)
 
 > Designing and building an enterprise-inspired home network from the ground up using industry best practices in networking, virtualization, cybersecurity and infrastructure engineering.
 
@@ -32,7 +31,7 @@ The primary objectives of this project are to:
 - Build a secure and scalable infrastructure
 - Separate networking from virtualization using dedicated hardware
 - Implement secure network segmentation using VLANs
-- Support 10Gbps networking across the core infrastructure
+- Support 10GbE networking across the core infrastructure
 - Deploy enterprise-grade security controls
 - Build a resilient virtualization platform
 - Implement centralized monitoring and logging
@@ -53,7 +52,7 @@ The primary objectives of this project are to:
                  pfSense Firewall
                  (Dedicated Appliance)
                          │
-                  10Gbps Core Switch
+                  10GbE Core Switch
         ┌──────────┬───────────┬──────────┐
         │          │           │
     Trusted LAN  Servers      Wireless
@@ -266,13 +265,13 @@ enterprise-homelab/
 │   ├── 13-monitoring/
 │   ├── 14-automation/
 │   ├── 15-operations/
-│   ├── 16-future-roadmap/
+│   ├── 16-roadmap/
 │   └── 17-lessons-learned/
 │
 ├── diagrams/
+│
 ├── screenshots/
-├── configs/
-├── scripts/
+│
 └── assets/
 ```
 
