@@ -250,29 +250,29 @@ enterprise-homelab/
 ├── README.md
 │
 ├── docs/
-│   ├── 01-vision-and-objectives/
-│   ├── 02-requirements/
-│   ├── 03-architecture/
-│   ├── 04-design-decisions/
-│   ├── 05-network-design/
-│   ├── 06-hardware-selection/
-│   ├── 07-firewall/
-│   ├── 08-switching/
-│   ├── 09-wireless/
-│   ├── 10-virtualization/
-│   ├── 11-services/
-│   ├── 12-security/
-│   ├── 13-monitoring/
-│   ├── 14-automation/
-│   ├── 15-operations/
-│   ├── 16-roadmap/
-│   └── 17-lessons-learned/
+│   ├── 01-vision-and-objectives.md
+│   ├── 02-requirements-analysis.md
+│   ├── 03-system-architecture.md
+│   ├── 04-design-decisions.md
+│   ├── 05-network-design.md
+│   ├── 06-hardware-selection.md
+│   ├── 07-firewall-pfsense.md
+│   ├── 08-switching.md
+│   ├── 09-wireless.md
+│   ├── 10-virtualization.md
+│   ├── 11-infrastructure-services.md
+│   ├── 12-security.md
+│   ├── 13-monitoring-and-observability.md
+│   ├── 14-automation.md
+│   ├── 15-operations.md
+│   ├── 16-roadmap.md
+│   └── 17-lessons-learned.md
 │
 ├── diagrams/
-│
 ├── screenshots/
-│
-└── assets/
+├── configs/
+├── assets/
+└── LICENSE (optional)
 ```
 
 ---
