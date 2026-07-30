@@ -250,7 +250,7 @@ enterprise-homelab/
 ├── README.md
 │
 ├── docs/
-│   ├── 01-project-overview/
+│   ├── 01-vision-and-objectives/
 │   ├── 02-requirements/
 │   ├── 03-architecture/
 │   ├── 04-design-decisions/
