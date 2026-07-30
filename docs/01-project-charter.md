@@ -4,7 +4,7 @@
 
 This document establishes the vision, objectives and guiding principles of the Enterprise Homelab project. It serves as the foundation for all architectural, technical and operational decisions documented throughout this repository.
 
-Rather than documenting only the final implementation, this project captures the complete engineering process—from defining requirements and evaluating technologies to designing, deploying and operating a modern enterprise-inspired network.
+Rather than documenting only the final implementation, this project captures the complete engineering process - from defining requirements and evaluating technologies to designing, deploying and operating a modern enterprise-inspired network.
 
 ---
 
