@@ -250,7 +250,7 @@ enterprise-homelab/
 ├── README.md
 │
 ├── docs/
-│   ├── 01-vision-and-objectives.md
+│   ├── 01-project-charter.md
 │   ├── 02-requirements-analysis.md
 │   ├── 03-system-architecture.md
 │   ├── 04-design-decisions.md
