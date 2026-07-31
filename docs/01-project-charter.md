@@ -1,156 +1,140 @@
 # Project Charter
 
-## Purpose
-
-This document establishes the vision, objectives and guiding principles of the Enterprise Homelab project. It serves as the foundation for all architectural, technical and operational decisions documented throughout this repository.
-
-Rather than documenting only the final implementation, this project captures the complete engineering process - from defining requirements and evaluating technologies to designing, deploying and operating a modern enterprise-inspired network.
+This document defines the purpose, objectives, scope, and guiding principles of the **Enterprise Home Network & Homelab** project. It serves as the project's governing document and establishes the foundation for all architectural, technical, and implementation decisions.
 
 ---
 
-# Vision
+# 1. Purpose
 
-To design, build and operate a secure, reliable and scalable enterprise-inspired homelab that applies industry best practices in networking, systems administration and cybersecurity.
+To design, build, and operate a secure, scalable, enterprise-inspired home network and homelab that serves as a platform for hands-on learning, experimentation, and infrastructure engineering.
 
-The homelab is intended to serve three primary purposes:
-
-- A production-quality home infrastructure supporting day-to-day services.
-- A practical learning platform for developing hands-on technical expertise.
-- A technical portfolio demonstrating engineering thought processes, implementation skills and operational practices.
-
-The long-term vision is not simply to build a home network, but to develop an environment that reflects the design principles, documentation standards and operational discipline commonly found in enterprise IT environments.
+The project applies enterprise architecture principles and industry best practices within a residential environment while documenting the complete design and implementation journey.
 
 ---
 
-# Motivation
+# 2. Vision
 
-As the home environment evolved beyond basic Internet connectivity to include virtualization, network-attached storage, smart home devices and self-hosted services, the limitations of a traditional consumer network became increasingly apparent.
-
-Rather than continuing to make incremental upgrades, this project adopts an engineering-first approach to redesign the infrastructure from the ground up.
-
-The project is driven by the desire to:
-
-- Build a secure and maintainable network architecture.
-- Gain practical experience with enterprise networking technologies.
-- Develop hands-on cybersecurity skills through real-world implementation.
-- Improve operational visibility and simplify troubleshooting.
-- Document engineering decisions for future reference.
-- Create a portfolio that demonstrates practical infrastructure engineering capabilities.
+To develop a production-quality homelab that demonstrates modern enterprise infrastructure design, enabling continuous learning, experimentation, and technical growth through practical implementation.
 
 ---
 
-# Engineering Principles
+# 3. Objectives
 
-The following principles guide every design decision throughout this project.
+This project aims to:
 
-## Security by Design
-
-Security is considered from the beginning of the design process rather than added as an afterthought. Network segmentation, least-privilege access, secure remote administration and infrastructure hardening are incorporated into the architecture wherever practical.
-
----
-
-## Simplicity Over Complexity
-
-Solutions should remain easy to understand, operate and troubleshoot. Additional complexity is introduced only when it provides clear operational, security or scalability benefits.
+- Design and deploy a resilient enterprise-inspired network architecture.
+- Implement secure network segmentation and access control.
+- Build a scalable virtualization platform for infrastructure and application services.
+- Develop practical skills in networking, virtualization, cybersecurity, and infrastructure operations.
+- Establish monitoring, logging, and observability across the environment.
+- Document architectural decisions, implementation procedures, and operational practices.
+- Continuously improve the platform through iterative enhancements and emerging technologies.
 
 ---
 
-## Scalability
+# 4. Scope
 
-The infrastructure should accommodate future growth without requiring significant redesign. Hardware, network architecture and addressing schemes are selected with future expansion in mind.
+## In Scope
 
----
+- Enterprise-inspired network architecture
+- Firewall, routing, and switching
+- Network segmentation
+- Virtualization platform
+- Self-hosted infrastructure services
+- Containerized applications
+- Identity and access management
+- Monitoring and logging
+- Security hardening
+- Backup and disaster recovery
+- Infrastructure automation
+- Technical documentation
 
-## Reliability
+## Out of Scope
 
-Core infrastructure should provide stable and predictable operation. Changes should minimise service disruption and support straightforward recovery in the event of failure.
-
----
-
-## Documentation First
-
-Every significant engineering decision should be documented, including its rationale, alternatives considered and implementation details. Good documentation is treated as an integral part of the system rather than an afterthought.
-
----
-
-## Continuous Improvement
-
-Technology and operational requirements evolve over time. This project is intended to grow through iterative improvements, allowing new technologies and best practices to be evaluated and incorporated where appropriate.
-
----
-
-# Project Objectives
-
-The project seeks to achieve the following objectives:
-
-## Technical Objectives
-
-- Design a secure, segmented network architecture.
-- Deploy a dedicated firewall appliance.
-- Build a high-performance 10 Gb network backbone.
-- Implement enterprise-grade wireless networking.
-- Support virtualization and self-hosted infrastructure services.
-- Enable secure remote administration and VPN access.
-- Establish centralized monitoring and logging.
-- Develop reliable backup and disaster recovery procedures.
+- Commercial hosting
+- Enterprise production workloads
+- Multi-site high availability
+- Carrier-grade networking
+- Revenue-generating services
 
 ---
 
-## Engineering Objectives
+# 5. Success Criteria
 
-- Apply structured engineering methodologies throughout the project.
-- Evaluate technology choices based on technical requirements rather than trends.
-- Document architectural decisions and implementation processes.
-- Develop operational procedures for ongoing maintenance and support.
-- Produce comprehensive technical documentation suitable for long-term maintenance.
+The project will be considered successful when:
 
----
-
-# Success Criteria
-
-The project will be considered successful when it satisfies the following outcomes.
-
-## Infrastructure
-
-- Dedicated firewall deployed as the primary network gateway.
-- Network segmentation implemented using VLANs.
-- Stable virtualization platform supporting infrastructure services.
-- High-speed network backbone operating as designed.
+- Core infrastructure operates reliably and securely.
+- Network segmentation functions according to the intended architecture.
+- Security controls are implemented and validated.
+- Monitoring provides sufficient operational visibility.
+- Infrastructure can be rebuilt using documented procedures.
+- Documentation accurately reflects the deployed environment.
+- New services can be integrated without significant architectural redesign.
 
 ---
 
-## Security
+# 6. Constraints & Assumptions
 
-- Secure remote access implemented.
-- Appropriate network isolation enforced.
-- Firewall policies documented and maintained.
-- Critical infrastructure hardened using security best practices.
+## Constraints
 
----
+| Area | Constraint |
+|------|------------|
+| Budget | Personal funding |
+| Environment | Residential apartment |
+| Hardware | Commodity x86 hardware |
+| Availability | Single-site deployment |
+| Time | Part-time development |
 
-## Operations
+## Assumptions
 
-- Infrastructure monitoring implemented.
-- Configuration backup procedures established.
-- Recovery procedures documented and validated.
-- System documentation maintained alongside infrastructure changes.
-
----
-
-## Engineering
-
-- Major architectural decisions documented with supporting rationale.
-- Design documentation kept current throughout the project lifecycle.
-- Repository reflects the complete engineering process from planning through implementation and operation.
+- Reliable fibre Internet connectivity is available.
+- Open-source software will be preferred where practical.
+- Hardware can be upgraded incrementally over time.
+- The environment is intended primarily for learning and experimentation.
+- Future technologies can be integrated without major architectural redesign.
 
 ---
 
-# Guiding Philosophy
+# 7. Risks
 
-This project places equal emphasis on **engineering process** and **technical implementation**.
+| Risk | Mitigation |
+|------|------------|
+| Hardware failure | Maintain regular backups and documented recovery procedures |
+| Configuration errors | Implement changes incrementally and maintain version control |
+| Security vulnerabilities | Apply regular updates and follow security best practices |
+| Scope expansion | Follow a phased implementation roadmap |
+| Documentation drift | Update documentation alongside infrastructure changes |
 
-Building reliable infrastructure requires more than selecting appropriate hardware or configuring software. It requires understanding requirements, evaluating alternatives, documenting decisions and maintaining operational discipline throughout the lifecycle of the system.
+---
 
-Whenever multiple solutions exist, preference is given to designs that balance **security**, **simplicity**, **maintainability** and **scalability** rather than pursuing unnecessary complexity or adopting technology for its own sake.
+# 8. Guiding Principles
 
-The objective is not simply to build a homelab, but to cultivate the mindset and practices expected of a professional infrastructure engineer.
+The project follows these engineering principles:
+
+- **Security by Design** — Build security into every layer of the architecture.
+- **Simplicity over Complexity** — Prefer straightforward, maintainable solutions.
+- **Documentation First** — Record architecture, decisions, and implementation alongside development.
+- **Incremental Improvement** — Build iteratively with continuous refinement.
+- **Automation Where Practical** — Reduce manual effort through repeatable automation.
+- **Open Standards** — Prioritise interoperable, vendor-neutral technologies where appropriate.
+- **Reproducibility** — Ensure the environment can be rebuilt from documented procedures.
+- **Continuous Learning** — Use the homelab as a platform for ongoing technical development.
+
+---
+
+# 9. Project Phases
+
+| Phase | Description | Status |
+|------|-------------|:------:|
+| 1 | Planning & Architecture | ✅ Complete |
+| 2 | Core Network Deployment | 🚧 In Progress |
+| 3 | Virtualization Platform | ⏳ Planned |
+| 4 | Infrastructure Services | ⏳ Planned |
+| 5 | Security & Observability | ⏳ Planned |
+| 6 | Automation & Optimisation | ⏳ Planned |
+
+---
+
+> **Project Philosophy**
+>
+> Build an enterprise-inspired infrastructure using practical, repeatable engineering practices while documenting every major architectural decision and implementation. The objective is not merely to operate a homelab, but to develop a well-engineered platform that supports continuous learning, experimentation, and long-term maintainability.
