@@ -30,7 +30,7 @@
 
 This repository documents the complete engineering lifecycle of building an enterprise-inspired homelab.
 
-Rather than focusing only on implementation, the project documents the reasoning behind each technical decision—from requirements gathering and hardware evaluation to architecture design, deployment, operations and continuous improvement.
+Rather than focusing only on implementation, the project documents the reasoning behind each technical decision - from requirements gathering and hardware evaluation to architecture design, deployment, operations and continuous improvement.
 
 The objective is to apply enterprise engineering practices within a home environment while developing practical experience in networking, infrastructure engineering and cybersecurity.
 
