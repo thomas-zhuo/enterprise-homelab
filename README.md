@@ -7,173 +7,187 @@
 ![Virtualization](https://img.shields.io/badge/Virtualization-Proxmox%20VE-E57000)
 ![Documentation](https://img.shields.io/badge/Type-Engineering%20Case%20Study-orange)
 
-> **An enterprise-inspired homelab that applies real-world networking, virtualization and cybersecurity principles through structured engineering design, implementation and operational documentation.**
+> **An enterprise-inspired homelab developed as an Infrastructure Engineering Case Study, demonstrating the complete lifecycle of designing, implementing, securing, and operating a modern network to support practical cybersecurity learning.**
 
 ---
 
-# 🚀 Project at a Glance
+# Project at a Glance
 
 | | |
 |---|---|
 | **Project Type** | Enterprise Homelab |
-| **Purpose** | Practical Infrastructure Engineering & Cybersecurity |
-| **Firewall** | pfSense CE |
-| **Virtualization** | Proxmox VE |
-| **Network Backbone** | 10GbE Gigabit Ethernet |
-| **Internet** | 10Gbps XGS-PON |
-| **Documentation Style** | Engineering Design Case Study |
+| **Primary Focus** | Cybersecurity Infrastructure |
+| **Engineering Discipline** | Infrastructure Engineering |
+| **Firewall Platform** | pfSense CE |
+| **Virtualization Platform** | Proxmox VE |
+| **Network Backbone** | 10GbE Ethernet |
+| **Internet Connectivity** | 10Gbps XGS-PON |
+| **Documentation Style** | Engineering Case Study |
 | **Status** | 🚧 In Progress |
 
 ---
 
-# 🎯 Overview
+# Executive Summary
 
-This repository documents the complete engineering lifecycle of building an enterprise-inspired homelab.
+The Enterprise Homelab is the cornerstone of my cybersecurity portfolio.
 
-Rather than focusing only on implementation, the project documents the reasoning behind each technical decision - from requirements gathering and hardware evaluation to architecture design, deployment, operations and continuous improvement.
+Rather than documenting only configuration steps, this repository captures the complete engineering lifecycle of building a secure, enterprise-inspired infrastructure - from project planning and requirements analysis to architecture, implementation, operations, and continuous improvement.
 
-The objective is to apply enterprise engineering practices within a home environment while developing practical experience in networking, infrastructure engineering and cybersecurity.
-
----
-
-# ✨ Highlights
-
-This repository includes documentation covering:
-
-- 📋 Requirements Analysis
-- 🏛 Enterprise Network Architecture
-- ⚖️ Engineering Design Decisions
-- 🌐 VLAN & IP Address Design
-- 🔥 pfSense Firewall Deployment
-- 🔀 Managed Switching
-- 📡 Enterprise Wireless Networking
-- 🖥 Proxmox Virtualization
-- 🔒 Security Hardening
-- 📊 Monitoring & Observability
-- 🤖 Infrastructure Automation
-- 📚 Lessons Learned
+The environment serves as the secure foundation for future cybersecurity projects, including identity management, security monitoring, detection engineering, threat hunting, incident response, and cloud security.
 
 ---
 
-# 🏗 High-Level Architecture
+# Objectives
+
+This project aims to:
+
+- Apply enterprise infrastructure engineering principles.
+- Build a secure and scalable network using security-by-design principles.
+- Develop practical cybersecurity skills through hands-on implementation.
+- Document engineering decisions, trade-offs, and operational procedures.
+- Create a reusable platform for future cybersecurity projects.
+
+---
+
+# High-Level Architecture
 
 ```text
-                                  Internet
-                                      │
-                                      ▼
-                            Huawei XGS-PON ONU
-                                      │
-                               10GbE SFP+ WAN
-                                      │
-                                      ▼
-                    Dedicated Network Security Appliance
-                               (pfSense CE)
-                                      │
-                          Routing, Security & VPN
-                                      │
-                               10GbE SFP+ LAN
-                                      │
-                                      ▼
-                              10GbE Core Switch
-                                      │
-                                      ▼
-      ┌───────────────────────┬───────────────────────┬───────────────────────┐
-      │                       │                       │                       │
-      ▼                       ▼                       ▼                       ▼
- User & Wireless         Smart Devices          Infrastructure        Lab & Services
-      Network                Network                 Network               Network
-      │                       │                       │                       │
-      ▼                       ▼                       ▼                       ▼
- PCs, Mobile Devices     IoT & Cameras       Firewall, Switch, APs    Proxmox, NAS, VMs
- & Guest Devices                               & Hypervisor             & DMZ Services
-             
+                              Internet
+                                  │
+                                  ▼
+                        Huawei XGS-PON ONU
+                                  │
+                           10GbE SFP+ WAN
+                                  │
+                                  ▼
+                  Dedicated Network Security Appliance
+                           (pfSense CE)
+                                  │
+                     Routing, Security & VPN
+                                  │
+                           10GbE SFP+ LAN
+                                  │
+                                  ▼
+                           10GbE Core Switch
+                                  │
+      ┌───────────────────┬───────────────────┬───────────────────┐
+      │                   │                   │                   │
+      ▼                   ▼                   ▼                   ▼
+ User Network        IoT Network      Infrastructure       Lab Network
+                                              │
+                                              ▼
+                              Proxmox • NAS • Services
 ```
 
-*A detailed logical and physical architecture is documented in the Architecture section.*
+*A complete logical and physical architecture is documented in the Architecture section.*
 
 ---
 
-# 📖 Documentation Roadmap
+# Engineering Deliverables
 
-The repository is organised to follow the lifecycle of an infrastructure engineering project.
+The repository is organised to follow the lifecycle of an enterprise infrastructure engineering project.
 
-| Phase | Description |
-|-------|-------------|
+| Phase | Deliverable |
+|------|-------------|
 | 01 | Project Charter |
 | 02 | Requirements Analysis |
-| 03 | System Architecture |
-| 04 | Design Decisions |
-| 05 | Network Design |
-| 06 | Hardware Selection |
-| 07 | Firewall (pfSense) |
-| 08 | Switching |
-| 09 | Wireless |
-| 10 | Virtualization |
-| 11 | Infrastructure Services |
-| 12 | Security |
-| 13 | Monitoring & Observability |
-| 14 | Automation |
-| 15 | Operations |
-| 16 | Roadmap |
-| 17 | Lessons Learned |
+| 03 | Solution Architecture |
+| 04 | Logical Network Design |
+| 05 | Physical Infrastructure Design |
+| 06 | Security Architecture |
+| 07 | IP Addressing & VLAN Plan |
+| 08 | Architecture Decision Records (ADRs) |
+| 09 | Firewall Deployment |
+| 10 | Switching Configuration |
+| 11 | Wireless Deployment |
+| 12 | Proxmox Deployment |
+| 13 | Infrastructure Services |
+| 14 | Security Baseline |
+| 15 | Monitoring & Observability |
+| 16 | Backup & Disaster Recovery |
+| 17 | Operations Guide |
+| 18 | Roadmap |
+| 19 | Lessons Learned |
 
 ---
 
-# 🛠 Technology Stack
+# Technology Stack
 
 | Category | Technology |
 |-----------|------------|
 | Firewall | pfSense CE |
-| Hypervisor | Proxmox VE |
+| Virtualization | Proxmox VE |
+| Network | 10GbE Ethernet |
 | Switching | Managed Layer 2/3 Switch |
-| Routing | VLAN Segmentation |
-| Internet | ViewQwest 10Gbps XGS-PON |
-| Virtualization | KVM |
+| Internet | ViewQwest XGS-PON |
 | Storage | Synology NAS |
-| Operating Systems | FreeBSD, Debian, Linux |
+| Operating Systems | FreeBSD, Linux |
 | Management | Web UI, SSH |
 
 ---
 
-# 🎯 Engineering Principles
+# Engineering Principles
 
-The project is guided by several core engineering principles:
+The project is guided by the following engineering principles:
 
 - 🔒 Security by Design
+- 🏗 Enterprise Architecture
 - 📈 Scalability
-- ⚙️ Simplicity over Complexity
+- ⚙ Simplicity over Complexity
 - 📚 Documentation First
 - 🔍 Operational Visibility
 - 🔄 Continuous Improvement
 
 ---
 
-# 📈 Current Progress
+# Current Progress
 
 | Component | Status |
 |-----------|--------|
-| Project Planning | ✅ |
-| Hardware Selection | ✅ |
-| Dedicated Firewall | 🚧 |
-| VLAN Design | 🚧 |
-| Managed Switching | ⏳ |
-| Wireless Infrastructure | ⏳ |
-| Virtualization Platform | ⏳ |
+| Planning | ✅ |
+| Requirements Analysis | ✅ |
+| Architecture Design | 🚧 |
+| Firewall Platform | 🚧 |
+| Switching | ⏳ |
+| Wireless | ⏳ |
+| Virtualization | ⏳ |
 | Infrastructure Services | ⏳ |
 | Monitoring | ⏳ |
-| Automation | ⏳ |
+| Documentation | 🚧 |
 
 ---
 
-# 📌 Repository Philosophy
+# Repository Philosophy
 
 > [!IMPORTANT]
-> This repository focuses on **engineering decisions**, **architecture** and **operational practices**, rather than simply documenting configuration steps.
+> This repository focuses on engineering thinking as much as technical implementation.
 
-Every major technical decision is accompanied by its rationale, trade-offs and implementation details to demonstrate the engineering thought process behind the final solution.
+Every major design decision is documented together with its rationale, trade-offs, and implementation approach.
+
+The objective is not only to build a secure enterprise-inspired environment, but also to demonstrate the engineering process behind each decision.
 
 ---
 
-# 📜 License
+# Relationship to the Cybersecurity Portfolio
 
-This project is currently intended as a personal engineering portfolio and learning repository.
+This repository forms the secure infrastructure foundation for the rest of my cybersecurity portfolio.
+
+```
+Enterprise Homelab
+        │
+        ├── Cybersecurity Labs Portfolio
+        ├── Windows Active Directory Lab
+        ├── Security Monitoring & SIEM
+        ├── Detection Engineering
+        ├── Threat Hunting
+        ├── Incident Response
+        └── Cloud Security
+```
+
+Future repositories will build upon the infrastructure documented here.
+
+---
+
+# License
+
+This repository is maintained as a personal engineering portfolio and learning project.
